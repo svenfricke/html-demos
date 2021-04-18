@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Fieldset"</title>
+    </head>
+    <body>
+
+        <form action="test.php" method="POST">
+            <!-- 
+                Zusammenfassen (gruppieren) von Formularelementen
+
+                Das fieldset-Element umschließt die zusammengehörigen
+                Formularelemente.
+             -->
+            <fieldset>
+                <!-- 
+                    Das legend-Element erzeugt die Beschriftung der zusammengehörigen
+                    Formularelemente.
+                 -->
+                <legend>Anmeldung</legend>
+
+                <div>
+                    <label for="vorname">Vorname</label>
+                    <input id="vorname" type="text" placeholder="Vorname">
+                </div>
+
+                <div>
+                    <label for="nachname">Nachname</label>
+                    <input id="nachname" type="text" placeholder="Nachname" maxlength="10">
+                </div>
+
+                <hr>
+
+                <div>
+                    <button type="submit">Absenden</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

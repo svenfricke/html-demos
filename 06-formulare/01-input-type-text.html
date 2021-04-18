@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Input Text</title>
+    </head>
+    <body>
+        <!-- 
+            Container Element, das Formularelemente
+            aufnimmt und beim Absenden berücksichtigt.
+
+            Das action-Attribut legt fest, welche Datei 
+            die Daten aus dem Formular verarbeitet.
+            
+            Das method-Attribut legt die Übertragungsmethode
+            fest, mit der die Daten an die verarbeitende Datei 
+            übermittelt weden. Mögliche Werte sind GET oder POST.
+        -->
+        <form action="test.php" method="POST">
+            <div>
+                <!-- 
+                    Beschriftung des Formularelements
+
+                    Das Attribut "for" verknüpft das label-Element,
+                    mit dem Formularelement das ein id-Attribut mit
+                    dem gleichen Wert besitzt.
+                -->
+                <label for="vorname">Vorname</label>
+                <!-- 
+                    Eingabefeld
+
+                    Das type-Attribut legt die Art der Eingabe fest.
+                    In diesem Fall "text".
+
+                    Das placeholder-Attribut zeigt im Eingabefeld einen
+                    Platzhaltertext an.
+
+                    Übersicht über alle Input Typen:
+                    https://www.w3schools.com/tags/att_input_type.asp
+                -->
+                <input id="vorname" type="password" name="vorname" placeholder="Vorname">
+            </div>
+
+            <div>
+                <label for="nachname">Nachname</label>
+                <!-- 
+                    Das maxlength-Attribut gibt vor, wieviele 
+                    Zeichen maximal eingegeben dürfen.
+                -->
+                <input id="nachname" type="text" name="nachname" placeholder="Nachname" maxlength="10">
+            </div>
+
+            <div>
+                <!-- 
+                    Button zum Absenden des Formulars
+
+                    Das type-Attribut legt die Art des Buttons fest.
+                    In diesem Fall ist er für das Absenden des Formulars
+                    zuständig.
+                -->
+                <button type="submit">Absenden</button>
+            </div>
+        </form>
+    </body>
+</html>

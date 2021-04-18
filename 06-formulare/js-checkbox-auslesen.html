@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Input Checkbox</title>
+
+        <style>
+            section {
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST">
+            <section>
+                <h3>Auswahl Belag</h3>
+                
+                <input type="checkbox" id="pepperoni" name="belag" value="Pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+
+                <input type="checkbox" id="parmesan" name="belag" value="Parmesan">
+                <label for="parmesan">Parmesan</label>
+            
+                <input type="checkbox" id="salami" name="belag" value="Salami">
+                <label for="salami">Salami</label>
+            </section>
+            
+            <div>
+                <button id="checkboxTest" type="submit">Absenden</button>
+            </div>
+        </form>
+        <script>
+            const checkboxen = document.querySelectorAll('input[name="belag"]');
+            const num = checkboxen.length;
+            document.querySelector('#checkboxTest').onclick = function(e) {
+                e.preventDefault();
+                let ausgewaehlt = "";
+                for (let i = 0; i < num; i++) {
+                    if (checkboxen[i].checked === true) {
+                        ausgewaehlt += checkboxen[i].value + " "; 
+                    }
+                }
+                alert(ausgewaehlt);
+            }
+        </script>
+    </body>
+</html>

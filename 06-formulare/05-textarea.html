@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Textarea</title>
+        <style>
+            label, button {
+                display: block;
+            }
+
+            textarea {
+                width: 500px;
+                height: 500px;
+            }
+
+            /* button {
+                background-color: teal;
+                color: white;
+                border: none;
+                padding: 10px;
+            } */
+        </style>
+    </head>
+    <body>
+
+        <form action="test.php" method="POST">
+            <label for="nachricht">Bitte geben Sie Ihre Nachricht hier ein:</label>
+            <!-- 
+                Mehrzeiliges Eingabefeld
+
+                Dient der Eingabe von mehrzeiligen Texten. Dies können z.B. Kommentare, 
+                Nachrichten an den Websitebetreiber oder Produktbewertungen sein.
+
+                Das cols-Attribut bestimmt, wie breit das Eingabefeld dargestellt wird,
+                d.h. wieviele Zeichen pro Zeile eingegeben werden können. Voraussetzung
+                dafür ist jedoch, dass die Breite des Eingabefelds nicht mit CSS 
+                festgelegt ist.
+
+                Das rows-Attribut bestimmt, wie wiviele Zeilen das Eingabefeld haben soll.
+                Voraussetzung dafür ist jedoch, dass die Höehe des Eingabefelds nicht mit 
+                CSS festgelegt ist.
+            -->
+            <textarea name="nachricht" id="nachricht" cols="30" rows="10"></textarea>
+
+            <button type="submit">Absenden</button>
+        </form>
+
+    </body>
+</html>

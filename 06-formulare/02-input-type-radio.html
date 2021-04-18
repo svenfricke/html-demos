@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Input Radio</title>
+    </head>
+    <body>
+        <form action="test.php" method="POST">
+            <div>
+                <!-- 
+                    Radiobutton
+
+                    Das type-Attribut legt die Art der Eingabe fest.
+                    In diesem Fall "radio". Radiobuttons sind beschriftete 
+                    Knöpfe die nur eine Auswahl zulassen.
+
+                    Das name-Attribut sorgt dafür, dass das verarbeitende 
+                    Skript auf die Daten des Radiobuttons zugreifen kann.
+                    Diese sind im value-Attribut gespeichert.
+                -->
+                
+                <input type="radio" id="anredeHerr" name="anrede" value="Herr">
+                <label for="anredeHerr">Herr</label>
+                
+                <input type="radio" id="anredeFrau" name="anrede" value="Frau">
+                <label for="anredeFrau">Frau</label>
+            </div>
+            
+            <div>
+                <button type="submit">Absenden</button>
+            </div>
+        </form>
+    </body>
+</html>

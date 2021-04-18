@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Select</title>
+    </head>
+    <body>
+        <form action="test.php" method="POST">
+            <label>Zutaten:</label>
+            <!--  
+                Auswahlliste
+
+                Stellt festgelegte Auswahlmöglichkeiten in 
+                einer Auswahlliste zur Verfügung.
+                
+                In der Standardeinstellung ist nur eine Auswahl 
+                möglich. Durch das Attribut "multiple" kann die 
+                Darstellung umgeschaltet werden, sodass mehrere 
+                Optionen gleichzeitig ausgewählt werden können.
+            -->
+
+            <!-- <select name="zutaten"> -->
+            <select name="zutaten">
+                <!-- Der Wert im value-Attribut wird übertragen -->
+                <option value="salami">Salami</option>
+                <!-- 
+                    Das selected-Attribut trifft eine Vorauswahl,
+                    d.h. dass in diesem Fall "Pepperoni" und nicht
+                    "Salami" zuerst ausgewählt.
+                -->
+                <option value="pepperoni">Pepperoni</option>
+                <!-- 
+                    Das disabled-Attribut sorgt dafür, dass die Option
+                    nicht ausgewählt werden kann.
+                -->
+                <option value="parmesan" disabled>Parmesan</option>
+                <option value="oliven">Oliven</option>
+            </select>
+        </form>
+    </body>
+</html>

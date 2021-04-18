@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabellen Demos</title>
+    <style>
+        table, th, td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+        -------------------
+        | sp1 | sp2 | sp3 |  
+        -------------------
+        -------------------
+        | sp1 | sp2 | sp3 |  
+        -------------------
+        
+    -->
+    <table>
+        <tr>
+            <td>1. Spalte</td><td>2. Spalte</td><td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td>1. Spalte</td><td>2. Spalte</td><td>3. Spalte</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!--
+        -------------------
+        | sp1 | sp2 | sp3 | 
+        -------------------
+        -------------------
+        | sp1   sp2 | sp3 |
+        -------------------
+        -------------------
+        | sp1 | sp2   sp3 | 
+        -------------------
+        -------------------
+        | sp1 | sp2 | sp3 | 
+        -------------------
+    -->
+    <table>
+        <tr>
+            <td>1. Spalte</td><td>2. Spalte</td><td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td colspan="2">1. Spalte</td><td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td>1. Spalte</td><td colspan="2">2. Spalte</td>
+        </tr>
+        <tr>
+            <td>1. Spalte</td><td>2. Spalte</td><td>3. Spalte</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!--
+        -------------------
+        | sp1 | sp2 | sp3 | 
+        -------------------
+        -------------------
+        | sp1 | sp2 | sp3 | 
+        -     -------------
+        -     -------------
+        | sp1 | sp2 | sp3 | 
+        -     -------------
+        -     -------------
+        | sp1 | sp2 | sp3 | 
+        -------------------
+        -------------------
+        | sp1 | sp2 | sp3 | 
+        -------------------
+    -->
+    <table>
+        <tr>
+            <td>1. Spalte</td><td>2. Spalte</td><td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td rowspan="3">1. Spalte</td><td>2. Spalte</td><td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td>2. Spalte</td><td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td>2. Spalte</td><td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td>1. Spalte</td><td>2. Spalte</td><td>3. Spalte</td>
+        </tr>
+    </table>
+    
+    <br>
+
+    <!--
+        -------------------
+        | sp1 | sp2 | sp3 | 
+        -------------------
+        -------------------
+        |     |     | sp3 | 
+        -------------------
+        -------------------
+        |     |     | sp3 | 
+        -------------------
+        -------------------
+        |     |     | sp3 | 
+        -------------------
+        -------------------
+        | sp1 | sp2 | sp3 | 
+        -------------------
+    -->
+
+    <table>
+        <tr>
+            <td>1. Spalte</td><td>2. Spalte</td><td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="2">1. Spalte</td><td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td>3. Spalte</td>
+        </tr>
+        <tr>
+            <td>1. Spalte</td><td>2. Spalte</td> <td>3. Spalte</td>
+        </tr>
+    </table>
+
+</body>
+</html>

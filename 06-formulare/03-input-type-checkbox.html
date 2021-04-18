@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Input Checkbox</title>
+    </head>
+    <body>
+        <form action="pizzaservice.php" method="POST">
+            <div>
+                <!-- 
+                    Checkbox
+
+                    Das type-Attribut legt die Art der Eingabe fest.
+                    In diesem Fall "checkbox". Radiobuttons sind ankreuzbare
+                    Kontrollfelder, die eine Mehrfachauswahl zulassen.
+
+                    Das name-Attribut sorgt dafür, dass das verarbeitende 
+                    Skript auf die Daten der Checkboxen zugreifen kann.
+                    Diese sind im value-Attribut gespeichert.
+                -->
+                <input type="checkbox" id="pepperoni" name="belag[]" value="Pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="parmesan" name="belag[]" value="Parmesan">
+                <label for="parmesan">Parmesan</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="salami" name="belag[]" value="Salami">
+                <label for="salami">Salami</label>
+            </div>
+            
+            <div>
+                <button type="submit">Absenden</button>
+            </div>
+        </form>
+    </body>
+</html>

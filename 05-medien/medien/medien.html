@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medien</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        figure {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>&lt;img&gt; Element</h2>
+
+    <!-- Bild einbinden mit Quellangabe (Wo ist das Bild gespeichert?) -->
+    <img src="./bilder/erdbeere.png" alt="Erdbeere">
+    <img src="bilder/orange.png" alt="Orange">
+    <img src="bilder/trauben.png" alt="Trauben">
+
+    <hr>
+
+    <h2>&lt;figure&gt; Element</h2>
+
+    <!-- Zum Seiteninhalt gehörende Bilder mit Beschreibung -->
+    <figure>
+        <img src="bilder/strand-amrum.jpg" alt="Strand Amrum">
+        <!-- Beschreibung des Bildes -->
+        <figcaption>Strand auf Amrum</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>&lt;video&gt; Element</h2>
+
+    <!-- Video einbinden und Kontrollelemente anzeigen -->
+    <video width="700" poster="videos/berge.jpg" controls autoplay muted>
+        <!-- Quellangabe (Wo ist das Video gespeichert?) -->
+        <source src="videos/berge.mp4" type="video/mp4">
+        <!-- Quellangabe (Wo ist das Video gespeichert?) -->
+        <source src="videos/berge.ogg" type="video/ogg">
+        <!-- Text anzeigen, wenn das Video nicht geladen werden kann -->
+        Ihr Browser kann dieses Videodokument nicht wiedergeben.
+    </video>
+
+    <h2>&lt;audio&gt; Element </h2>
+
+    <!-- 
+        Musikdatei einbinden und Kontrollelemente anzeigen 
+        Musikdateien sind nicht im Download enthalten 
+        (wg. Uploadlimit in Moodle)
+    -->
+
+    <audio controls>
+        <!-- Quellangabe (Wo ist die Musikdatei gespeichert?) -->
+        <source src="musik/test.mp3" type="audio/mp3">
+        <!-- Quellangabe (Wo ist die Musikdatei gespeichert?) -->
+        <source src="test.ogg" type="audio/ogg">
+        <!-- Text anzeigen, wenn die Musikdatei nicht geladen werden kann -->
+        Ihr Browser kann dieses Tondokument nicht wiedergeben.
+    </audio>
+    
+</body>
+</html>

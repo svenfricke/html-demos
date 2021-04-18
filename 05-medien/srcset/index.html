@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>srcset</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #bild {
+            display: block;
+            height: 100vh;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style> 
+</head>
+<body>
+    <!-- <img id="bild" src="bilder/original@1x.jpg"> -->
+    <img
+        srcset="bilder/klein-500-375.jpg 500w, bilder/mittel-1000-750.jpg 1000w"
+        sizes="(max-width: 700px) 100vw, (min-width: 700px) 50vw"
+        src="bilder/klein-500-375.jpg" 
+    >
+</body>
+
+<!-- Besser hier einbidnden ;) -->
+<script src="dpr.js"></script>
+
+</html>
